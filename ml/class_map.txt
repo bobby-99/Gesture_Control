@@ -1,0 +1,1 @@
+{'fist': 0, 'none': 1, 'ok_sign': 2, 'open_palm': 3, 'thumb_up': 4}

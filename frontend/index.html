@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Gesture Control Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="icon">☁️</span>
+                <h1>Cloud<span class="highlight">G</span>esture</h1>
+            </div>
+            <div class="status-badge" id="backend-status">
+                <span class="dot"></span> Backend: Connecting...
+            </div>
+        </header>
+
+        <main>
+            <!-- AWS Instance Dashboard -->
+            <section class="card dashboard">
+                <h2>AWS EC2 Instances</h2>
+                <div class="instance-list" id="instance-list">
+                    <!-- Instances will be injected here via JS -->
+                    <div class="loading">Loading AWS Infrastructure...</div>
+                </div>
+            </section>
+
+            <!-- Activity Logs -->
+            <section class="card logs">
+                <h2>Audit Logs (Security Trail)</h2>
+                <div class="log-container">
+                    <table class="log-table">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>User</th>
+                                <th>Action</th>
+                                <th>Target</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="log-body">
+                            <!-- Logs injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Gesture Reference -->
+            <section class="card controls">
+                <h2>Mapped Gestures</h2>
+                <div class="gesture-grid">
+                    <div class="gesture-item">
+                        <span class="emoji">✋</span>
+                        <div class="info">
+                            <strong>OPEN PALM</strong>
+                            <small>Start Instance</small>
+                        </div>
+                    </div>
+                    <div class="gesture-item">
+                        <span class="emoji">✊</span>
+                        <div class="info">
+                            <strong>FIST</strong>
+                            <small>Stop Instance</small>
+                        </div>
+                    </div>
+                    <div class="gesture-item">
+                        <span class="emoji">👍</span>
+                        <div class="info">
+                            <strong>THUMB UP</strong>
+                            <small>Reboot Instance</small>
+                        </div>
+                    </div>
+                    <div class="gesture-item">
+                        <span class="emoji">👌</span>
+                        <div class="info">
+                            <strong>OK SIGN</strong>
+                            <small>Terminate (Disabled)</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

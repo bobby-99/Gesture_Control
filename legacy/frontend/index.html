@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gesture-Based Computer Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🖐 Gesture-Based Computer Control Dashboard</h1>
+  <p>Cloud-Enabled Human–Computer Interaction System</p>
+</header>
+
+<div class="container">
+
+  <div class="card status">
+    <h3>System Status</h3>
+    <p id="connection">🟡 Connecting...</p>
+  </div>
+
+  <div class="card highlight">
+    <h3>Detected Gesture</h3>
+    <p id="gesture">---</p>
+  </div>
+
+  <div class="card highlight">
+    <h3>Last Action Performed</h3>
+    <p id="action">---</p>
+  </div>
+
+</div>
+
+<div class="card table-card">
+  <h3>Gesture → Operation Mapping</h3>
+  <table>
+    <tr><th>Gesture</th><th>Operation</th></tr>
+    <tr><td>OPEN PALM</td><td>Show Desktop</td></tr>
+    <tr><td>FIST</td><td>Lock Screen</td></tr>
+    <tr><td>ONE</td><td>Volume Up</td></tr>
+    <tr><td>TWO</td><td>Volume Down</td></tr>
+    <tr><td>THREE</td><td>Open File Explorer</td></tr>
+    <tr><td>FOUR</td><td>Open Task Manager</td></tr>
+    <tr><td>THUMB UP</td><td>Take Screenshot</td></tr>
+    <tr><td>OK SIGN</td><td>Shutdown System</td></tr>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
