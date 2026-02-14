@@ -139,4 +139,4 @@ If you want to retrain the AI for *your* hand:
 *   **"AWS Error"**: Check your `.env` keys.
 
 ---
-**Developed by [Your Name]** | *Cloud-Enabled Gesture System v2.0*
+**Developed by SoumyaRanjan** | *Cloud-Enabled Gesture System v2.0*
