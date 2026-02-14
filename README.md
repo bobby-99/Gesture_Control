@@ -34,7 +34,7 @@ This system allows users to control **AWS Cloud Infrastructure (EC2 Instances)**
 ## 📂 Project Structure
 
 ```
-Chotu/
+Gesture_Control/
 ├── backend/                # Server & API
 │   ├── main.py             # FastAPI App & Endpoints
 │   ├── aws_manager.py      # Boto3 logic for AWS Control
@@ -60,7 +60,7 @@ Chotu/
 
 ### prerequisites
 1.  **Python 3.9+** installed.
-2.  **AWS Account** (Free Tier is fine) with Access Keys.
+2.  **AWS Account** (Free Tier is fine) with Access Keys. 
 3.  **Webcam**.
 
 ### Step 1: Clone & Setup Dependencies
